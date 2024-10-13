@@ -6,5 +6,5 @@ int main(){
     scanf("%f",&c);
     
     k = c + 273.15;
-    printf("la temperature en kelvin est: ",k);
+    printf("la temperature en kelvin est: %f",k);
 }
