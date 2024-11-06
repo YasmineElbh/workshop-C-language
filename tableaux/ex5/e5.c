@@ -8,7 +8,7 @@ int main(){
     scanf("%d",&n);
     for (int i = 0; i < n; i++)
     {
-        printf("entrer les valeurs: ", +i);
+        printf("entrer les valeurs %d: ", +i);
         scanf("%d",&tab[i]);
     }
     min = tab[0];
