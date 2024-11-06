@@ -10,19 +10,21 @@ int main(){
         printf("entrer element %d: ", +i);
         scanf("%d",&tab[i]);
     }
-    for (int i = 0; i < n; i++)
+    int swap = 0;
+    for (int i = 0; i < n - 1; i++)
     {
-        for (int j = 0; j < i; j++)
+        for (int j = 0; j < n - i - 1; j++)
         {
-            tab[i] = tab[j];
-            tab[j] = tab[i+1];
-            tab[i+1] = tab[j+1];
+            tmp = tab[j];
+            tab[j] = tab[j+1];
+            tab[j+1] = tmp;
+            swap = 1;
         }
         
     }
     for (int j = 0; j < n; j++)
     {
-        printf("%d",tab[j]);
+        printf("%d ",tab[j]);
     }
 
 }
