@@ -13,17 +13,22 @@ int main(){
     printf("entrer element que voulez vous remplacer dans le tableau: ");
     scanf("%d",&r);
 
-    printf("element le remplacement: ");
-    scanf("%d",&replace);
     
+
     int found = 0;
+    printf("entrer element que voulew vous remplace avec: ");
+    scanf("%d",&replace);
     for(int i = 0; i < n; i++){
+        
         if(tab[i] == r)
         {
-            r = tab[i];
-            
+            tab[i] = replace;
+            printf("vous avez remplace %d avec %d",r,replace,i);
             found = 1;
+            
         }
     }
-    printf("%d",tab[i]);
+    for(int i = 0; i < n; i++){
+        printf("%d",tab[i]);
+    }
 }
