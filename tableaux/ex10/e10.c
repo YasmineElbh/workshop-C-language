@@ -19,7 +19,8 @@ int main(){
         if(tab[i] == r){
             // r = tab[i];
             printf("element que vous recherchez est present :%d",r,i);
-            found = 1;}
+            found = 1;
+            }
         }
         if(!found)
             printf("%d element que vous recherchez not present", r, i);
