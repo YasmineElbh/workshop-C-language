@@ -31,7 +31,7 @@ void afficher_livres(){
         printf("le livre %d\n", i + 1);
         printf("le titre du livres:%s\n", titre[i]);
         printf("le nom d Auteur:%s\n", auteur[i]);
-        printf("le prix du livres:%d\n", prix[i]);
+        printf("le prix du livres:%f\n", prix[i]);
         printf("la quantite du livres:%d\n", quantite[i]);
     }
     printf("-------------------------------\n");
