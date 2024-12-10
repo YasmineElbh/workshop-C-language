@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/hp/Desktop/workshop-C-language/conditions/challenge1",
-      "program": "c:/Users/hp/Desktop/workshop-C-language/conditions/challenge1/build/Debug/outDebug",
+      "cwd": "c:/Users/hp/Documents/workshop-C-language/tableaux/ex9",
+      "program": "c:/Users/hp/Documents/workshop-C-language/tableaux/ex9/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
