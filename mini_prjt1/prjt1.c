@@ -36,6 +36,29 @@ void afficher_livres(){
     }
     printf("-------------------------------\n");
 }
+void modifier(){
+    int i, n;
+    char titre_livre[100];
+    int found = 0;
+    printf("entrer le nom de livre que voules vous mettre a jour: ");
+    scanf("%s", &titre_livre);
+
+    for (i = 0; i < n; i++)
+    {
+        if (strcmp(titre_livre, titre[i]) == 0)
+        {
+            printf("entrer le stock a ajoute: ");
+            scanf("%s", &quantite[i]);
+            printf("stock a ete mis a jour");
+            found++;
+            break;
+        }
+    }
+    if (found == 0)
+    {
+        printf("le livre no trouve!!");
+    }
+}
 int main(){
     int n, choix;
     for (int i = 0; i <= n; i++)
@@ -59,6 +82,10 @@ int main(){
         case 2:
             afficher_livres();
             break;
+        case 3:
+            modifier();
+            break;
+        
         default:
             break;
         }
