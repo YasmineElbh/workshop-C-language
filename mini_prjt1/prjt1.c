@@ -59,6 +59,29 @@ void modifier(){
         printf("le livre no trouve!!");
     }
 }
+void delete(){
+    char titre_l[50];
+    int i, n;
+    int found = 0;
+    printf("entrer le titre de livre que voules vous mettre a jour: ");
+    scanf("%s", &titre_l);
+    for (int i = 0; i < n; i++)
+    {
+        if(strcmp(titre_l, titre_l[i] == 0)){
+            strcpy(titre[i], titre[i - 1]);
+            strcpy(auteur[i], auteur[i - 1]);
+            prix[i] = prix[i - 1];
+            quantite[i] = quantite[i - 1];
+            i--;
+            found = 1;
+            printf("l livre a ete supprime");
+        }
+
+    }
+    if(found == 0)
+        printf("le livre non trouve");
+    
+}
 int main(){
     int n, choix;
     for (int i = 0; i <= n; i++)
@@ -85,7 +108,9 @@ int main(){
         case 3:
             modifier();
             break;
-        
+        case 4:
+            delete();
+            break;
         default:
             break;
         }
